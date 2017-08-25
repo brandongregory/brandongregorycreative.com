@@ -1,0 +1,6 @@
+excerpt_separator: <!--more-->
+future: true
+paginate: 5
+paginate_path: "/blog/page:num/"
+permalink: /blog/:categories/:title.html
+plugins: [jekyll-paginate]

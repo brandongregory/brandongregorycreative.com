@@ -1,0 +1,24 @@
+html,body {
+    height: 100%;
+    overflow-x: hidden;
+}
+section {
+    padding-top: 30px;
+    position: relative;
+    .content {
+        .make-md-column(6);
+    }
+    &:nth-of-type(even) .content {
+        .make-md-column-offset(6);
+    }
+}
+@media (min-width: @screen-sm-min) {
+    section {
+        padding-top: 65px;
+    }
+}
+@media (min-width: @screen-md-min) {
+    section {
+        min-height: 100%;
+    }
+}
