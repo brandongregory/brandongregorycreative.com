@@ -2,12 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Brandon Gregory | Jekyll for Speed</title>
 <link rel="stylesheet" href="/css/master.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#e0f2f1">
+<meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#e0f2f1">
 </head>
-<body class="red">
+<body class="green">
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -17,12 +34,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Brandon Gregory <span class="hidden-xs hidden-sm">Creative</span></a>
+                <a class="navbar-brand" href="/index.html">Brandon Gregory <span class="hidden-xs hidden-sm">Creative</span></a>
             </div><!-- / .navbar-header -->
             <div class="navbar-collapse" id="main-nav">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                    <li><a href="/writing.html"><i class="fa fa-pencil" aria-hidden="true"></i> Writing</a></li>
+                    <li><a href="/writing.html"><i class="fas fa-pencil-alt"></i> Writing</a></li>
                     <li><a href="/web.html"><i class="fa fa-cog" aria-hidden="true"></i> Web</a></li>
                     <li><a href="/about.html"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
                     <li class="active"><a href="/blog/"><i class="fa fa-book" aria-hidden="true"></i> Blog</a></li>
@@ -46,7 +63,7 @@
 
 <p>Shortly after uncovering that, I discovered Jekyll through the amazing front-end developer <a href="http://unakravets.com/">Una Kravets</a>. This addressed that problem directly, and looked really cool to boot, so I decided to give it a try.</p>
 
-<p>So did it work? After re-coding my site in Jekyll (in one evening), the page load time dropped to about .35 seconds. It may seem ridiculous to get excited about increases of less than a quarter of a second, but the gain could potentially be a lot more for a PHP-intensive site with lots of logic going on behind the scenes. And being that <a href="https://www.forbes.com/sites/oreillymedia/2014/01/16/web-performance-is-user-experience/#5aaf93be5a52">sites are supposed to load in under two seconds</a>, even a quarter of a second can make a huge difference to your viewers.</p>
+<p>So did it work? After re-coding my site in Jekyll (in one evening), the page load time dropped from .5 seconds to about .35 seconds. It may seem ridiculous to get excited about increases of less than a quarter of a second, but the gain could potentially be a lot more for a PHP-intensive site with lots of logic going on behind the scenes. And being that <a href="https://www.forbes.com/sites/oreillymedia/2014/01/16/web-performance-is-user-experience/#5aaf93be5a52">sites are supposed to load in under two seconds</a>, even a quarter of a second can make a huge difference to your viewers.</p>
 
 <p>After the rebuild, I went back and built this blog in the framework. I was amazed how easy it was, and it’s all compiled beforehand, so none of burden of that logic happens on the user’s time.</p>
 
@@ -78,15 +95,16 @@
         <div class="container-fluid text-center">
             <p>
                 <span class="hidden-xs">Connect with Brandon:</span>
-                <a href="https://twitter.com/authorbrandong" class="soc-btn soc-btn-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://medium.com/@brandongregory1981" class="soc-btn soc-btn-medium"><i class="fa fa-medium" aria-hidden="true"></i></a>
-                <a href="https://codepen.io/pulpexploder/" class="soc-btn soc-btn-codepen"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/brandon-gregory-5971b8119" class="soc-btn soc-btn-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://facebook.com/pulpexploder" class="soc-btn soc-btn-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://instagram.com/pulpexploder/" class="soc-btn soc-btn-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/authorbrandong" class="soc-btn soc-btn-twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://medium.com/@brandongregory1981" class="soc-btn soc-btn-medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a href="https://codepen.io/pulpexploder/" class="soc-btn soc-btn-codepen"><i class="fab fa-codepen" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/brandon-gregory-5971b8119" class="soc-btn soc-btn-linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.goodreads.com/user/show/77608069-brandon-gregory" class="soc-btn soc-btn-goodreads"><i class="fab fa-goodreads" aria-hidden="true"></i></a>
+                <a href="https://facebook.com/pulpexploder" class="soc-btn soc-btn-facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://instagram.com/pulpexploder/" class="soc-btn soc-btn-instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
             </p>
             <p>
-                Made with <i class="fa fa-heart" aria-hidden="true"></i> using <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="https://jekyllrb.com/">Jekyll</a>.
+                Made with <i class="fa fa-heart" aria-hidden="true"></i> using <a href="https://jekyllrb.com/">Jekyll</a>.
             </p>
             <p>
                 &copy;2016-2017 Brandon Gregory
@@ -95,7 +113,7 @@
             </p>
         </div><!-- / .container-fluid -->
     </footer>
-    <script src="/js/scripts.js"></script>
+    <script src="/js/scripts-min.js"></script>
     <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

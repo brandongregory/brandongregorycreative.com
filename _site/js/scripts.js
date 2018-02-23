@@ -1,9 +1,9 @@
-// Just vanilla JavaScript here. Because jQuery's not worth it for one piece of functionality!
+// Just vanilla JavaScript here!
 var menuToggles = document.querySelectorAll(".navbar-toggle");
 
 Array.prototype.forEach.call(menuToggles, function(menuToggle) {
-    menuToggle.addEventListener("touchend", function() {
-        var menu = document.querySelector(menuToggle.dataset.target);
+    menuToggle.addEventListener("click", function() {
+        let menu = document.querySelector(menuToggle.dataset.target);
         menu.classList.toggle("open");
         menuToggle.classList.toggle("collapsed");
     });

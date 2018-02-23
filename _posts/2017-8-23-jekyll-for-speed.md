@@ -1,6 +1,6 @@
 ---
 categories: tools
-class: red
+class: green
 comments: true
 date: August 23, 2017
 layout: post
@@ -18,7 +18,7 @@ I'd been making performance improvements on the PHP site and gotten the page loa
 
 Shortly after uncovering that, I discovered Jekyll through the amazing front-end developer [Una Kravets](http://unakravets.com/). This addressed that problem directly, and looked really cool to boot, so I decided to give it a try.
 
-So did it work? After re-coding my site in Jekyll (in one evening), the page load time dropped to about .35 seconds. It may seem ridiculous to get excited about increases of less than a quarter of a second, but the gain could potentially be a lot more for a PHP-intensive site with lots of logic going on behind the scenes. And being that [sites are supposed to load in under two seconds](https://www.forbes.com/sites/oreillymedia/2014/01/16/web-performance-is-user-experience/#5aaf93be5a52), even a quarter of a second can make a huge difference to your viewers.
+So did it work? After re-coding my site in Jekyll (in one evening), the page load time dropped from .5 seconds to about .35 seconds. It may seem ridiculous to get excited about increases of less than a quarter of a second, but the gain could potentially be a lot more for a PHP-intensive site with lots of logic going on behind the scenes. And being that [sites are supposed to load in under two seconds](https://www.forbes.com/sites/oreillymedia/2014/01/16/web-performance-is-user-experience/#5aaf93be5a52), even a quarter of a second can make a huge difference to your viewers.
 
 After the rebuild, I went back and built this blog in the framework. I was amazed how easy it was, and it's all compiled beforehand, so none of burden of that logic happens on the user's time.
 
