@@ -16,3 +16,5 @@ For a complete build, you'd run these commands from the CLI:
 - `gulp package` to minify everything and get it ready for deployment
 
 I chose to separate out the packaging process, since that's typically not done until after I'm done testing.
+
+*Note:* Speaking page is not done. I need to figure out how to speak first.
