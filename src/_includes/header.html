@@ -1,0 +1,49 @@
+<!--
+    Looking for code you can read? Try my Github: https://github.com/brandongregory/brandongregorycreative.com
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Brandon Gregory | {{ page.title }}</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i|Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.pathToHome }}css/styles.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="apple-touch-icon" sizes="57x57" href="{{ page.pathToHome }}icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ page.pathToHome }}icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ page.pathToHome }}icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ page.pathToHome }}icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ page.pathToHome }}icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ page.pathToHome }}icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ page.pathToHome }}icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ page.pathToHome }}icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ page.pathToHome }}icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ page.pathToHome }}icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ page.pathToHome }}icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ page.pathToHome }}icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ page.pathToHome }}icons/favicon-16x16.png">
+<link rel="manifest" href="{{ page.pathToHome }}icons/manifest.json">
+<meta name="msapplication-TileColor" content="#e0f2f1">
+<meta name="msapplication-TileImage" content="{{ page.pathToHome }}icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#e0f2f1">
+</head>
+<body class="{{ page.class }}">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <a class="logo" href="{{ page.pathToHome }}index.html">Brandon Gregory <span class="hidden-xs hidden-sm">Creative</span></a>
+            <ul class="nav">
+                <li{% if page.pagename == "home" %} class="active"{% endif %}><a href="{{ page.pathToHome }}index.html"><i class="icon-home" aria-hidden="true"></i> Home</a></li>
+                <li{% if page.pagename == "writing" %} class="active"{% endif %}><a href="{{ page.pathToHome }}writing.html"><i class="icon-pencil"></i> Writing</a></li>
+                <li{% if page.pagename == "web" %} class="active"{% endif %}><a href="{{ page.pathToHome }}web.html"><i class="icon-cog" aria-hidden="true"></i> Web</a></li>
+                <li{% if page.pagename == "about" %} class="active"{% endif %}><a href="{{ page.pathToHome }}about.html"><i class="icon-user" aria-hidden="true"></i> About</a></li>
+                <li{% if page.pagename == "blog" %} class="active"{% endif %}><a href="{{ page.pathToHome }}blog/"><i class="icon-book" aria-hidden="true"></i> Blog</a></li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>

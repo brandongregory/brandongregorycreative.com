@@ -1,0 +1,47 @@
+.soc-btn {
+    display: inline-block;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    width: 44px;
+    &:hover {
+        color: #FFF !important;
+        text-decoration: none;
+    }
+}
+.soc-btn-amazon:hover {
+    background-color: #ff9900;
+}
+.soc-btn-codepen:hover {
+    background-color: #000;
+}
+.soc-btn-facebook:hover {
+    background-color: #3e5b98;
+}
+.soc-btn-github:hover {
+    background-color: #4078c0;
+}
+.soc-btn-goodreads:hover {
+    background-color: #553b08;
+}
+.soc-btn-instagram:hover {
+    background-color: #d93175;
+}
+.soc-btn-itunes:hover {
+    background-color: #ff5e51;
+}
+.soc-btn-linkedin:hover {
+    background-color: #0077b5;
+}
+.soc-btn-medium:hover {
+    background-color: #000;
+}
+.soc-btn-soundcloud:hover {
+    background-color: #ff8800;
+}
+.soc-btn-twitter:hover {
+    background-color: #4da7de;
+}
+.soc-btn-youtube:hover {
+    background-color: #cd201f;
+}

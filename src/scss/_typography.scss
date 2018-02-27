@@ -1,0 +1,77 @@
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+h1, .h1 {
+    font-size: ($font-size-base * 3);
+}
+h2, .h2 {
+    font-size: ($font-size-base * 2);
+}
+h1, h2, .h1, .h2 {
+    font-family: $font-script;
+    font-weight: normal;
+}
+h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+    font-family: $font-sans-serif;
+    font-weight: 700;
+}
+section a {
+    text-decoration: underline;
+}
+section ul {
+    li {
+        list-style-type: circle;
+    }
+}
+section .watermark {
+    align-self: end;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    color: #FFF;
+    display: none;
+    font: 63px $font-script;
+    padding: 0 15px 1rem 15px;
+    text-align: right;
+}
+section:nth-of-type(even) .watermark {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.small {
+    font-size: 14px;
+}
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    h1, h2, h3, h4, h5, h6 {
+        text-align: left;
+    }
+    section .watermark {
+        display: block;
+    }
+    .visible-xs {
+        display: none;
+    }
+}
+@media (min-width: $screen-lg-min) {
+    section .watermark {
+        font-size: 72px;
+    }
+}
+@media (min-width: 1600px) {
+    section .watermark {
+        font-size: 84px;
+    }
+}
