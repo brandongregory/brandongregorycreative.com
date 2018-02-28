@@ -1,7 +1,7 @@
 BrandonGregoryCreative.com
 ==========================
 
-Just a little site to present my professional self and accomplishments. The site is built with compiled HTML using Jekyll. Also uses SASS and Gulp for the build system.
+Just a little site to present my professional self and accomplishments. The site is built with compiled HTML using Jekyll. Also uses SASS for CSS, Gulp for the build system, and NPM for package management.
 
 Quick rundown on the file structure:
 
@@ -17,4 +17,4 @@ For a complete build, you'd run these commands from the CLI:
 
 I chose to separate out the packaging process, since that's typically not done until after I'm done testing.
 
-*Note:* Speaking page is not done. I need to figure out how to speak first.
+*Note: Speaking page is not done. I need to figure out how to speak first.*
