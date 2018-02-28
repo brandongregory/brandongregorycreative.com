@@ -780,6 +780,9 @@ section:nth-of-type(even) .watermark {
 .small {
   font-size: 14px; }
 
+.sr-only {
+  display: none; }
+
 @media (max-width: 767px) {
   .hidden-xs {
     display: none; } }
