@@ -413,6 +413,8 @@ section.short {
         color: #0398db; }
     .blue section .scroll-down, .blue footer .scroll-down {
       color: #03A9F4; }
+    .blue section .watermark, .blue footer .watermark {
+      color: #BBDEFB; }
 
 .brown {
   background: #EFEBE9; }
@@ -429,6 +431,8 @@ section.short {
         color: #694a3e; }
     .brown section .scroll-down, .brown footer .scroll-down {
       color: #795548; }
+    .brown section .watermark, .brown footer .watermark {
+      color: #D7CCC8; }
 
 .indigo {
   background: #E8EAF6; }
@@ -445,6 +449,8 @@ section.short {
         color: #3849a2; }
     .indigo section .scroll-down, .indigo footer .scroll-down {
       color: #3F51B5; }
+    .indigo section .watermark, .indigo footer .watermark {
+      color: #C5CAE9; }
 
 .orange {
   background: #FFF3E0; }
@@ -461,6 +467,8 @@ section.short {
         color: #e68900; }
     .orange section .scroll-down, .orange footer .scroll-down {
       color: #FF9800; }
+    .orange section .watermark, .orange footer .watermark {
+      color: #FFE0B2; }
 
 .teal {
   background: #E0F2F1; }
@@ -477,6 +485,8 @@ section.short {
         color: #007d71; }
     .teal section .scroll-down, .teal footer .scroll-down {
       color: #009688; }
+    .teal section .watermark, .teal footer .watermark {
+      color: #B2DFDB; }
 
 .green {
   background: #F1F8E9; }
@@ -493,6 +503,8 @@ section.short {
         color: #7eb73d; }
     .green section .scroll-down, .green footer .scroll-down {
       color: #8BC34A; }
+    .green section .watermark, .green footer .watermark {
+      color: #DCEDC8; }
 
 .red {
   background: #FFEBEE; }
@@ -509,6 +521,8 @@ section.short {
         color: #f32c1e; }
     .red section .scroll-down, .red footer .scroll-down {
       color: #F44336; }
+    .red section .watermark, .red footer .watermark {
+      color: #FFCDD2; }
 
 .pink {
   background: #FCE4EC; }
@@ -525,6 +539,8 @@ section.short {
         color: #d81558; }
     .pink section .scroll-down, .pink footer .scroll-down {
       color: #E91E63; }
+    .pink section .watermark, .pink footer .watermark {
+      color: #F8BBD0; }
 
 @font-face {
   font-family: 'icomoon';
@@ -764,7 +780,6 @@ section .watermark {
   animation-name: slideIn;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  color: #FFF;
   display: none;
   font: 63px "Pacifico", cursive;
   padding: 0 15px 1rem 15px;
