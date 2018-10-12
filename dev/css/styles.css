@@ -415,6 +415,10 @@ section.short {
       color: #03A9F4; }
     .blue section .watermark, .blue footer .watermark {
       color: #BBDEFB; }
+  .blue form input[type=text], .blue form textarea {
+    border-color: #01579B; }
+  .blue form button {
+    background: #01579B; }
 
 .brown {
   background: #EFEBE9; }
@@ -433,6 +437,10 @@ section.short {
       color: #795548; }
     .brown section .watermark, .brown footer .watermark {
       color: #D7CCC8; }
+  .brown form input[type=text], .brown form textarea {
+    border-color: #3E2723; }
+  .brown form button {
+    background: #3E2723; }
 
 .indigo {
   background: #E8EAF6; }
@@ -451,6 +459,10 @@ section.short {
       color: #3F51B5; }
     .indigo section .watermark, .indigo footer .watermark {
       color: #C5CAE9; }
+  .indigo form input[type=text], .indigo form textarea {
+    border-color: #1A237E; }
+  .indigo form button {
+    background: #1A237E; }
 
 .orange {
   background: #FFF3E0; }
@@ -469,6 +481,10 @@ section.short {
       color: #FF9800; }
     .orange section .watermark, .orange footer .watermark {
       color: #FFE0B2; }
+  .orange form input[type=text], .orange form textarea {
+    border-color: #E65100; }
+  .orange form button {
+    background: #E65100; }
 
 .teal {
   background: #E0F2F1; }
@@ -487,6 +503,10 @@ section.short {
       color: #009688; }
     .teal section .watermark, .teal footer .watermark {
       color: #B2DFDB; }
+  .teal form input[type=text], .teal form textarea {
+    border-color: #004D40; }
+  .teal form button {
+    background: #004D40; }
 
 .green {
   background: #F1F8E9; }
@@ -505,6 +525,10 @@ section.short {
       color: #8BC34A; }
     .green section .watermark, .green footer .watermark {
       color: #DCEDC8; }
+  .green form input[type=text], .green form textarea {
+    border-color: #33691E; }
+  .green form button {
+    background: #33691E; }
 
 .red {
   background: #FFEBEE; }
@@ -523,6 +547,10 @@ section.short {
       color: #F44336; }
     .red section .watermark, .red footer .watermark {
       color: #FFCDD2; }
+  .red form input[type=text], .red form textarea {
+    border-color: #B71C1C; }
+  .red form button {
+    background: #B71C1C; }
 
 .pink {
   background: #FCE4EC; }
@@ -541,6 +569,10 @@ section.short {
       color: #E91E63; }
     .pink section .watermark, .pink footer .watermark {
       color: #F8BBD0; }
+  .pink form input[type=text], .pink form textarea {
+    border-color: #880E4F; }
+  .pink form button {
+    background: #880E4F; }
 
 @font-face {
   font-family: 'icomoon';
@@ -637,6 +669,61 @@ footer {
   margin: 30px 0;
   text-align: center; }
 
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  margin-top: 1rem; }
+
+form input[type=text], form textarea {
+  background: #FFF;
+  border: 1px solid transparent;
+  display: block;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  width: 100%; }
+  form input[type=text]:focus, form textarea:focus {
+    outline: none; }
+  form input[type=text]:disabled, form textarea:disabled {
+    opacity: .5; }
+
+form textarea {
+  min-height: calc(6em + 1rem); }
+
+form .error {
+  color: red;
+  font-weight: bold; }
+
+form .message {
+  font-weight: bold;
+  text-align: center; }
+
+form button {
+  border: none;
+  color: #FFF;
+  margin: 1rem 0;
+  padding: .5rem 1rem; }
+  form button:focus {
+    outline: none; }
+
+@media (min-width: 992px) {
+  form label {
+    float: left;
+    margin-right: 1rem;
+    text-align: right;
+    width: 25%; }
+  form input[type=text], form textarea {
+    float: left;
+    margin-top: .5rem;
+    width: calc(75% - 1rem); }
+    form input[type=text]:after, form textarea:after {
+      clear: left;
+      display: table; }
+  form button {
+    margin-left: calc(25% + 1rem); }
+  form .error {
+    margin: 0 0 0.5rem calc(25% + 1rem); } }
+
 .navbar {
   left: 0;
   position: fixed;
@@ -659,7 +746,7 @@ footer {
         display: block;
         height: 50px;
         line-height: 50px;
-        padding: 0 1rem; }
+        padding: 0 .75rem; }
   .navbar a {
     color: #FFF;
     text-decoration: none; }
@@ -689,7 +776,7 @@ footer {
         .navbar ul.nav li a {
           width: 100%; }
       .navbar ul.nav.open {
-        max-height: 250px; }
+        max-height: 300px; }
     .navbar .navbar-toggle {
       background: transparent;
       border: none;

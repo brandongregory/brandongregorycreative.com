@@ -1,0 +1,68 @@
+form {
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: .5rem;
+        margin-top: 1rem;
+    }
+    input[type=text], textarea {
+        background: #FFF;
+        border: 1px solid transparent;
+        display: block;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
+        &:disabled {
+            opacity: .5;
+        }
+    }
+    textarea {
+        min-height: calc(6em + 1rem);
+    }
+    .error {
+        color: red;
+        font-weight: bold;
+    }
+    .message {
+        font-weight: bold;
+        text-align: center;
+    }
+    button {
+        border: none;
+        color: #FFF;
+        margin: 1rem 0;
+        padding: .5rem 1rem;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    form {
+        label {
+            float: left;
+            margin-right: 1rem;
+            text-align: right;
+            width: 25%;
+        }
+        input[type=text], textarea {
+            float: left;
+            margin-top: .5rem;
+            width: calc(75% - 1rem);
+            &:after {
+                clear: left;
+                display: table;
+            }
+        }
+        button {
+            margin-left: calc(25% + 1rem);
+        }
+        .error {
+            margin: 0 0 .5rem calc(25% + 1rem);
+        }
+    }
+}

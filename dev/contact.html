@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Brandon Gregory | Speaker</title>
+<title>Brandon Gregory | Contact</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58814117-1"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-58814117-1');</script>
@@ -30,39 +30,33 @@
                 <li><a href="dev.html"><i class="icon-cog" aria-hidden="true"></i> Dev</a></li>
                 <li><a href="design.html"><i class="icon-newspaper" aria-hidden="true"></i> Design</a></li>
                 <li><a href="blog/"><i class="icon-book" aria-hidden="true"></i> Blog</a></li>
-                <li><a href="contact.html"><i class="icon-comment" aria-hidden="true"></i> Contact</a></li>
+                <li class="active"><a href="contact.html"><i class="icon-comment" aria-hidden="true"></i> Contact</a></li>
             </ul>
         </div><!-- /.container-fluid -->
     </nav>
 
 
-        <section>
-        <div class="scroll-down"><i class="icon-circle-down" aria-hidden="true"></i></div>
-        <div class="content">
-            <h1>Brandon speaks.</h1>
-            <p>Hi, my name is Brandon, and I&rsquo;m a Creative. By Creative, I mean I am creative, and I like to create things. I&rsquo;m a web developer, writer, and musician living in the Kansas City area. I can usually be found tinkering around with one of my artforms, either trying to get better or trying to create something.</p>
-            <p>If you&rsquo;re also a Creative (or a Techie!), I&rsquo;d love to meet you. Shoot me an email or say hi next time you see me, because I love meeting new people. Also feel free to reach out over social media (although I&rsquo;ll warn you right now, I&rsquo;m not very good with the Twitter).</p>
-            <p>Other things I&rsquo;m into include coffee, cats, and conquering others in board games or video games.</p>
-        </div><!-- / .content -->
-        <div class="watermark">Front-End Development and Collaboration Expert</div>
+    <section class="blog-home short">
+        <div class="container">
+            <h1 class="text-center">Contact Brandon</h1>
+<p>Have a question? Just want to say hi? Fill out this form to send me an email.</p>
+<div id="contact-app">
+    <form @submit.prevent="processForm">
+        <label for="form-name">Name</label>
+        <input type="text" name="name" id="form-name" placeholder="Your name" v-model="name" :disabled="formMessage !== ''" v-on:keyup="checkName">
+        <div class="error" v-if="nameError !== ''">{{ nameError }}</div>
+        <label for="form-email">Email</label>
+        <input type="text" name="email" id="form-email" placeholder="Your email" v-model="email" :disabled="formMessage !== ''" v-on:keyup="checkEmail">
+        <div class="error" v-if="emailError !== ''">{{ emailError }}</div>
+        <label for="form-message">Message</label>
+        <textarea name="message" id="form-message" placeholder="What do you want to say?" v-model="message" :disabled="formMessage !== ''" v-on:keyup="checkMessage"></textarea>
+        <div class="error" v-if="messageError !== ''">{{ messageError }}</div>
+        <div class="message" v-if="formMessage !== ''">{{ formMessage }}</div>
+        <button type="submit" v-if="formMessage === ''">Send message</button>
+    </form>
+</div><!-- / #contact-app -->
+        </div><!-- / .container -->
     </section>
-    <section>
-        <div class="watermark">Feel free to reach out! Contact information is below.</div>
-        <div class="content">
-            <h2>Questions with answers&hellip;</h2>
-            <h3>Can I hire you for something?</h3>
-            <p>If it&rsquo;s full-time, the answer is no. If it&rsquo;s short-term, part-time, feel free to reach out.</p>
-            <h3>Do you do speaking engagements?</h3>
-            <p>Yes, I do. <a href="mailto:brandon.gregory.1981@gmail.com">Email me</a> if you&rsquo;re interested.</p>
-            <h3>Could I sit down with you sometime and ask you about what you do?</h3>
-            <p>Yeah, absolutely! I love chatting with others in the fields I&rsquo;m in. Email me and we&rsquo;ll see about setting something up.</p>
-            <h3>Can I connect with you on LinkedIn?</h3>
-            <p>Well, you <i>can</i>, but don&rsquo;t expect me to acknowledge you in any way. I don&rsquo;t do anything on LinkedIn.</p>
-            <h3>What do you do when you&rsquo;re not being creative?</h3>
-            <p>When I&rsquo;m not being creative, I&rsquo;m usually either saving the world or playing video games.</p>
-        </div><!-- / .content -->
-    </section>
-
     
     <footer>
         <div class="container-fluid text-center">

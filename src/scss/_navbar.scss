@@ -21,7 +21,7 @@
                 display: block;
                 height: 50px;
                 line-height: 50px;
-                padding: 0 1rem;
+                padding: 0 .75rem;
             }
         }
     }
@@ -60,7 +60,7 @@
                 }
             }
             &.open {
-                max-height: 250px;
+                max-height: 300px;
             }
         }
         .navbar-toggle {
