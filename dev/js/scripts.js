@@ -66,16 +66,15 @@ var contactApp = new Vue({
         },
         sendEmail: function(formdata) {
             const request = new XMLHttpRequest();
-            let instance = this;
+            const instance = this;
             request.open("POST", "brandonmail.php", true);
             request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            request.onreadystatechange = function() {
+            request.onreadystatechange = () => {
                 if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
                     if (request.responseText === "email sent") {
-                        instance.formMessage = "Thank you! Your email was sent.";
-                        console.log(instance.formMessage);
+                        this.formMessage = "Thank you! Your email was sent.";
                     } else {
-                        instance.formMessage = "Oops! There was a problem with your submission. Try again later, or just email me at brandon.gregory.1981@gmail.com";
+                        this.formMessage = "Oops! There was a problem with your submission. Try again later, or just email me at brandon.gregory.1981@gmail.com";
                         console.error("Error: ",request.responseText);
                     }
                 }
