@@ -26,6 +26,19 @@ nav {
                 height: 54px;
                 line-height: 54px;
                 padding: 0 .75rem;
+                &:before {
+                    background: transparent;
+                    border: 1px solid #222;
+                    border-radius: 50%;
+                    content: "";
+                    display: inline-block;
+                    height: 8px;
+                    margin: 0 .5rem 2px 0;
+                    width: 8px;
+                }
+                &.active:before {
+                    background: #222;
+                }
             }
         }
     }

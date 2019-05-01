@@ -23,11 +23,11 @@
     </button>
     <a class="logo" href="{{ page.pathToHome }}index.html">Brandon Gregory <span class="hidden-xs hidden-sm">Creative</span></a>
     <ul class="nav">
-      <li><a href="{{ page.pathToHome }}index.html">{% if page.pagename == "home" %}&#8226;{% else %}&#9702;{% endif %} Home</a></li>
-      <li><a href="{{ page.pathToHome }}writing.html">{% if page.pagename == "writing" %}&#8226;{% else %}&#9702;{% endif %} Writing</a></li>
-      <li><a href="{{ page.pathToHome }}dev.html">{% if page.pagename == "dev" %}&#8226;{% else %}&#9702;{% endif %} Dev</a></li>
-      <li><a href="{{ page.pathToHome }}design.html">{% if page.pagename == "design" %}&#8226;{% else %}&#9702;{% endif %} Design</a></li>
-      <li><a href="{{ page.pathToHome }}blog/">{% if page.pagename == "blog" %}&#8226;{% else %}&#9702;{% endif %} Blog</a></li>
+      <li><a href="{{ page.pathToHome }}index.html"{% if page.pagename == "home" %} class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ page.pathToHome }}writing.html"{% if page.pagename == "writing" %} class="active"{% endif %}>Writing</a></li>
+      <li><a href="{{ page.pathToHome }}dev.html"{% if page.pagename == "dev" %} class="active"{% endif %}>Dev</a></li>
+      <li><a href="{{ page.pathToHome }}design.html"{% if page.pagename == "design" %} class="active"{% endif %}>Design</a></li>
+      <li><a href="{{ page.pathToHome }}blog/"{% if page.pagename == "blog" %} class="active"{% endif %}>Blog</a></li>
     </ul>
   </nav>
   <main>

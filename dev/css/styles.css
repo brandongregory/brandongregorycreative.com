@@ -521,6 +521,17 @@ nav {
         height: 54px;
         line-height: 54px;
         padding: 0 .75rem; }
+        nav ul.nav li a:before {
+          background: transparent;
+          border: 1px solid #222;
+          border-radius: 50%;
+          content: "";
+          display: inline-block;
+          height: 8px;
+          margin: 0 .5rem 2px 0;
+          width: 8px; }
+        nav ul.nav li a.active:before {
+          background: #222; }
   nav a {
     color: #000;
     text-decoration: none; }
