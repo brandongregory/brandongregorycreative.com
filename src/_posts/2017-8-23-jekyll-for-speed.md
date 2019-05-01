@@ -1,6 +1,5 @@
 ---
 categories: tools
-class: green
 comments: true
 date: August 23, 2017
 layout: post

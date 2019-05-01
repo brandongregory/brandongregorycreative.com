@@ -7,30 +7,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Brandon Gregory | {{ page.title }}</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58814117-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-58814117-1');</script>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i%7CPacifico" rel="stylesheet">
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58814117-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-58814117-1');</script>-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 <link rel="stylesheet" href="{{ page.pathToHome }}css/styles.css">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ page.pathToHome }}icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/bgc-32x32.png">
 </head>
 <body class="{{ page.class }}">
-    <nav class="navbar" id="nav-app">
-        <div class="container-fluid">
-            <button type="button" class="navbar-toggle collapsed" v-on:click="toggleMenu" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-            </button>
-            <a class="logo" href="{{ page.pathToHome }}index.html">Brandon Gregory <span class="hidden-xs hidden-sm">Creative</span></a>
-            <ul class="nav">
-                <li{% if page.pagename == "home" %} class="active"{% endif %}><a href="{{ page.pathToHome }}index.html"><i class="icon-home" aria-hidden="true"></i> Home</a></li>
-                <li{% if page.pagename == "writing" %} class="active"{% endif %}><a href="{{ page.pathToHome }}writing.html"><i class="icon-pencil"></i> Writing</a></li>
-                <li{% if page.pagename == "dev" %} class="active"{% endif %}><a href="{{ page.pathToHome }}dev.html"><i class="icon-cog" aria-hidden="true"></i> Dev</a></li>
-                <li{% if page.pagename == "design" %} class="active"{% endif %}><a href="{{ page.pathToHome }}design.html"><i class="icon-newspaper" aria-hidden="true"></i> Design</a></li>
-                <li{% if page.pagename == "blog" %} class="active"{% endif %}><a href="{{ page.pathToHome }}blog/"><i class="icon-book" aria-hidden="true"></i> Blog</a></li>
-                <li{% if page.pagename == "contact" %} class="active"{% endif %}><a href="{{ page.pathToHome }}contact.html"><i class="icon-comment" aria-hidden="true"></i> Contact</a></li>
-            </ul>
-        </div><!-- /.container-fluid -->
-    </nav>
+  <nav>
+    <button type="button" class="navbar-toggle collapsed" v-on:click="toggleMenu" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    <span class="menu-bar"></span>
+    </button>
+    <a class="logo" href="{{ page.pathToHome }}index.html">Brandon Gregory <span class="hidden-xs hidden-sm">Creative</span></a>
+    <ul class="nav">
+      <li><a href="{{ page.pathToHome }}index.html">{% if page.pagename == "home" %}&#8226;{% else %}&#9702;{% endif %} Home</a></li>
+      <li><a href="{{ page.pathToHome }}writing.html">{% if page.pagename == "writing" %}&#8226;{% else %}&#9702;{% endif %} Writing</a></li>
+      <li><a href="{{ page.pathToHome }}dev.html">{% if page.pagename == "dev" %}&#8226;{% else %}&#9702;{% endif %} Dev</a></li>
+      <li><a href="{{ page.pathToHome }}design.html">{% if page.pagename == "design" %}&#8226;{% else %}&#9702;{% endif %} Design</a></li>
+      <li><a href="{{ page.pathToHome }}blog/">{% if page.pagename == "blog" %}&#8226;{% else %}&#9702;{% endif %} Blog</a></li>
+    </ul>
+  </nav>
+  <main>

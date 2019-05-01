@@ -2,7 +2,7 @@ let gulp = require('gulp');
 let sass = require('gulp-sass');
 let cleanCss = require('gulp-clean-css');
 let htmlmin = require('gulp-htmlmin');
-let minify = require('gulp-minify');
+let minify = require('gulp-jsmin');
 let rename = require('gulp-rename');
 
 gulp.task('sass', function() {
@@ -13,10 +13,7 @@ gulp.task('sass', function() {
 
 gulp.task('minifyJs', function() {
     return gulp.src('dev/js/scripts.js')
-        .pipe(minify({
-            noSource: true
-        }))
-        .pipe(rename('scripts.js'))
+        .pipe(minify())
         .pipe(gulp.dest('dist/js'))
 });
 

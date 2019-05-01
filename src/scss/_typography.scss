@@ -1,40 +1,21 @@
 h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 2rem 0 1.5rem 0;
+    letter-spacing: .1em;
     text-align: center;
+    text-transform: uppercase;
 }
-h1, .h1 {
-    font-size: ($font-size-base * 3);
+h1 {
+    color: #222;
+    font-size: 1.7rem;
 }
-h2, .h2 {
-    font-size: ($font-size-base * 2);
+h3 {
+    font-size: 1.25rem;
 }
-h1, h2, .h1, .h2 {
-    font-family: $font-script;
-    font-weight: normal;
-}
-h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
-    font-family: $font-sans-serif;
-    font-weight: 700;
-}
-section a {
-    text-decoration: underline;
-}
-section ul {
+ul {
     li {
         list-style-type: circle;
     }
-}
-section .watermark {
-    align-self: end;
-    animation-name: slideIn;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    display: none;
-    font: 63px $font-script;
-    padding: 0 15px 1rem 15px;
-    text-align: right;
-}
-section:nth-of-type(even) .watermark {
-    text-align: left;
 }
 .text-center {
     text-align: center;
@@ -45,6 +26,28 @@ section:nth-of-type(even) .watermark {
 .sr-only {
     display: none;
 }
+.caps {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+hr {
+    border: none;
+    border-top: medium double #444;
+    color: #444;
+    margin: 0 0 2rem 0;
+    overflow: visible;
+    padding: 0;
+    text-align: center;
+}
+hr:after {
+    background: white;
+    content: "§";
+    display: inline-block;
+    padding: 0 0.5em;
+    position: relative;
+top: -.9em;
+}
+
 @media (max-width: 767px) {
     .hidden-xs {
         display: none;
@@ -56,24 +59,15 @@ section:nth-of-type(even) .watermark {
     }
 }
 
-@media (min-width: $screen-md-min) {
-    h1, h2, h3, h4, h5, h6 {
-        text-align: left;
-    }
-    section .watermark {
-        display: block;
+@media (min-width: $screen-sm-min) {
+    h1 {
+        font-size: 2.65rem;
     }
     .visible-xs {
         display: none;
     }
 }
 @media (min-width: $screen-lg-min) {
-    section .watermark {
-        font-size: 72px;
-    }
 }
 @media (min-width: 1600px) {
-    section .watermark {
-        font-size: 84px;
-    }
 }

@@ -1,0 +1,51 @@
+---
+categories: industry
+comments: true
+date: November 8, 2016
+layout: post
+pagename: blog
+title: "I interview web developers. Here's how to impress me."
+pathToHome: "../../"
+---
+
+I have seven years of interviewing experience with web developers. I’ve seen the good, the bad, and everything in-between. Here’s some of what I’ve learned to look for when interviewing web developers.
+
+<!--more-->
+
+## Don’t just know what—know why.
+
+So you know every tag in HTML5. Great. Do you know why you’d use an article instead of a section? You’ve studied up on AngularJS, but can you list a good real-world use case on an average project?
+
+Imagine a mechanic charging you $20 extra for an oil change for a new, experimental oil, but not being able to tell you why that experimental oil is better for you. If you can’t explain why your technologies are important, that’s what I’m afraid you’ll do. I need to be given a reason to believe that you know when to use — and when not to use — the technologies you know to more effectively solve problems.
+
+Knowing why also shows me that you’re involved in the ongoing discussions in our industry. Our industry is always growing and changing. If you’re not deeply involved with it, you will get left behind. Knowing, and voicing, why your knowledge matters shows me that you don’t just know today’s technology, but you’ll know tomorrow’s technology when it becomes available. That trait is just as important as knowing the technology in the first place.
+
+## Be a king or queen of the basics, not a jack of all technologies.
+
+I talk with a lot of developers who list Angular, Ember, React, or other fancy JavaScript libraries among their technical skills. That’s great, but can you turn that mess of functions the junior developer wrote into a custom extensible object that we can use on other projects, even if we don’t have the extra room for hefty libraries? Can you code an image slider with vanilla JavaScript so we don’t have to add jQuery to an older website just for one piece of functionality? Can you tell me what recursion is and give me a real-world example?
+
+Unless I specifically ask for it, I’d rather see things like OOP and CSS animation on resumés than whatever the flavor-of-the-week framework is. The fact is, we use advanced CSS and JavaScript on almost every project we work on, but we may not get around to using that new framework before the next major release completely changes everything you know about it. I’m not saying there’s no value in learning the latest and greatest, but make sure you have a very firm foundation in more usable technologies before you move on to more specialized ones.
+
+## Know how to solve business problems, not just technical problems.
+
+Come in with at least one example where you helped meet a business objective in a way that no one else could. Good developers follow processes, but great developers can identify problems with existing processes. Good developers give the client the solution they want, but great developers suggest new solutions to reduce project costs and timelines. Where have you gone beyond the initial request?
+
+In the end, our jobs are about two things: time and money. If we can’t save the client one of these things, we’re not experts — we’re just code monkeys. These are the problems that management deals with daily. If you can show that you can help us with these, you’re a lot more likely to land a spot on our teams.
+
+In communicating these, focus on the numbers. Don’t tell us you improved the process — tell us how many hours you saved your team. Don’t tell us you started A/B testing some of your sites — tell us how much you improved on-site conversions. The numbers are what matter, not the initiatives. That’s the language of success.
+
+## Know what you need to work on.
+
+Ask a street fighter what he needs to improve about his fighting style and you won’t get a solid answer; but ask Rhonda Rousey what she needs to improve and you’ll get a very specific, very real weakness that she’s aware of and working on fixing. True masters of their craft are acutely aware of their shortcomings and the gaps in their knowledge. It’s the amateurs who don’t have any weaknesses.
+
+You may or may not be asked about things you struggle with; but whether you provide them or not, we’re always looking for them, and we are very good at finding them. In fact, when you do tell us what your shortcomings are, it’s usually not a surprise to us. When we encounter someone who either isn’t aware of or isn’t willing to admit their shortcomings, that’s a good sign that they’re not ready to move up to the next level. It shows a lack of awareness and preparedness that concerns us.
+
+The best course of action, once you know what you need to work on, is to be honest about it and tell us what you’re doing to fix it. Chances are we already noticed your lack of organizational or communication skills. Owning it makes us feel better about you as a candidate.
+
+## Know what you want.
+
+I’m amazed how many developers I talk to that just want a job. Not a good job. Not a job with ample room for growth. Just any job. This is a big red flag for me because it shows me that you hold no loyalty to this company and job, and will jump ship at a moment’s notice because you don’t know what you want until you see it. I even talk to developers who will change what they want after they hear the job description. (That doesn’t work, by the way.)
+
+Give thought to what you want right now: what company culture and perks, what type of projects, what type of clients and coworkers. If it doesn’t match our company, you’ll find out now rather than six months into a job that you hate. If it does match our company, you’ll have an edge over people who don’t know what they want. There’s no downside to knowing this.
+
+And don’t stop there. Look at career path options and figure out where you want to be in two years, and five years. We’re always looking for the next team lead or technical architect, and that can influence our hiring decisions. And if you just want to be the best developer we’ve ever seen, that’s useful too. If someone tells me they want to be the best developer in the company within three years, that gives me a lot more confidence in their passion and longevity than someone who doesn’t know what they want to do. Always error on the side of ambition.

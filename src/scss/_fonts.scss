@@ -9,7 +9,7 @@
     font-style: normal;
   }
   
-  [class^="icon-"], [class*=" icon-"] {
+  [class^="bg-"], [class*=" bg-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -23,75 +23,75 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-user:before {
+  .bg-user:before {
     content: "\f007";
   }
-  .icon-cog:before {
+  .bg-cog:before {
     content: "\f013";
   }
-  .icon-gear:before {
+  .bg-gear:before {
     content: "\f013";
   }
-  .icon-book:before {
+  .bg-book:before {
     content: "\f02d";
   }
-  .icon-comment:before {
+  .bg-comment:before {
     content: "\f075";
   }
-  .icon-envelope:before {
+  .bg-envelope:before {
     content: "\f0e0";
   }
-  .icon-newspaper:before {
+  .bg-newspaper:before {
     content: "\f1ea";
   }
-  .icon-external-link:before {
+  .bg-external-link:before {
     content: "\e904";
   }
-  .icon-help-circle:before {
+  .bg-help-circle:before {
     content: "\e905";
   }
-  .icon-menu:before {
+  .bg-menu:before {
     content: "\e906";
   }
-  .icon-home:before {
+  .bg-home:before {
     content: "\e907";
   }
-  .icon-pencil:before {
+  .bg-pencil:before {
     content: "\e908";
   }
-  .icon-heart:before {
+  .bg-heart:before {
     content: "\e9da";
   }
-  .icon-circle-right:before {
+  .bg-circle-right:before {
     content: "\ea42";
   }
-  .icon-circle-down:before {
+  .bg-circle-down:before {
     content: "\ea43";
   }
-  .icon-circle-left:before {
+  .bg-circle-left:before {
     content: "\ea44";
   }
-  .icon-facebook:before {
+  .bg-facebook:before {
     content: "\ea90";
   }
-  .icon-instagram:before {
+  .bg-instagram:before {
     content: "\ea92";
   }
-  .icon-codepen:before {
+  .bg-codepen:before {
     content: "\e909";
   }
-  .icon-github:before {
+  .bg-github:before {
     content: "\e90a";
   }
-  .icon-linkedin:before {
+  .bg-linkedin:before {
     content: "\e900";
   }
-  .icon-twitter:before {
+  .bg-twitter:before {
     content: "\e901";
   }
-  .icon-goodreads:before {
+  .bg-goodreads:before {
     content: "\e902";
   }
-  .icon-medium:before {
+  .bg-medium:before {
     content: "\e903";
   }  

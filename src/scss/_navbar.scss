@@ -1,5 +1,9 @@
-.navbar {
+nav {
+    background-color: rgba(240,240,240,.9);
+    border-bottom: 1px solid #ccc;
+    height: 54px;
     left: 0;
+    padding: 0 1.5rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -7,11 +11,11 @@
     .logo {
         float: left;
         font-size: 1.5rem;
-        line-height: 50px;
+        line-height: 54px;
     }
     ul.nav {
         float: right;
-        height: 50px;
+        height: 54px;
         margin: 0;
         padding: 0;
         li {
@@ -19,32 +23,35 @@
             list-style-type: none;
             a {
                 display: block;
-                height: 50px;
-                line-height: 50px;
+                height: 54px;
+                line-height: 54px;
                 padding: 0 .75rem;
             }
         }
     }
     a {
-        color: #FFF;
+        color: #000;
         text-decoration: none;
     }
     .navbar-toggle {
-        color: #FFF;
+        color: #000;
         display: none;
     }
 }
-
+    
 @media (max-width: 767px) {
     body {
-        padding-bottom: 50px;
+        padding-bottom: 54px;
     }
-    .navbar {
+    nav {
+        border-bottom: none;
+        border-top: 1px solid #ccc;
         bottom: 0;
         margin-bottom: 0;
         top: auto;
         ul.nav {
-            bottom: 50px;
+            background-color: rgba(240,240,240,.9);
+            bottom: 54px;
             display: block;
             height: auto;
             left: 0;
@@ -60,6 +67,7 @@
                 }
             }
             &.open {
+                border-top: 1px solid #CCC;
                 max-height: 300px;
             }
         }
@@ -68,16 +76,16 @@
             border: none;
             display: block;
             float: left;
-            height: 40px;
+            height: 44px;
             margin: 5px 0;
-            width: 40px;
+            width: 44px;
             .menu-bar {
-                background: #FFF;
+                background: #444;
                 border-radius: 2px;
                 display: block;
                 height: 3px;
                 margin: 5px;
-                width: 30px;
+                width: 34px;
             }
             &:active, &:focus {
                 box-shadow: none;
@@ -86,6 +94,34 @@
         }
         .logo {
             float: right;
+        }
+    }
+    .navbar-toggle {
+        transform: translateX(6px);
+        transition: all .5s ease;
+        .menu-bar {
+            transition: all .5s ease;
+        }
+        .menu-bar:nth-of-type(2) {
+            transform: rotate(45deg) translateY(11px);
+        }
+        .menu-bar:nth-of-type(3) {
+            opacity: 0;
+        }
+        .menu-bar:nth-of-type(4) {
+            transform: rotate(-45deg) translateY(-11px);
+        }
+        &.collapsed {
+            transform: translateX(0);
+            .menu-bar:nth-of-type(2) {
+                transform: rotate(0) translateY(0);
+            }
+            .menu-bar:nth-of-type(3) {
+                opacity: 1;
+            }
+            .menu-bar:nth-of-type(4) {
+                transform: rotate(0) translateY(0);
+            }
         }
     }
 }

@@ -2,16 +2,16 @@
 layout: blog-home
 pagename: blog
 title: Blog
-class: green
 pathToHome: "../"
 ---
 
-<h1 class="text-center">Brandon&rsquo;s Blog</h1>
-<p>Thoughts and random musings from my adventures in the Web industry.</p>
+<h1>Brandon&rsquo;s Blog</h1>
+<hr>
+<p>Thoughts and random musings from my adventures in the web industry.</p>
 {% for post in paginator.posts %}
 <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="small">Posted {{ post.date | date_to_string }} in {{ post.categories }}</p>
+    <p class="small text-center">Posted {{ post.date | date_to_string }} in {{ post.categories }}</p>
     {{ post.excerpt }}
     <p><a href="{{ post.url }}">Read more &raquo;</a></p>
 </article>

@@ -17,15 +17,13 @@
 	],
 	"devDependencies": {
 		"gulp": "^3.9.1",
-		"gulp-sass": "^3.1.0",
-		"gulp-clean-css": "^3.9.2",
-		"gulp-htmlmin": "^4.0.0",
-		"gulp-minify": "^2.1.0",
-		"gulp-rename": "1.2.2"
+		"gulp-clean-css": "^4.2.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-rename": "1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-jsmin": "^0.1.5"
 	},
 	"dependencies": {
-		"hoek": "^5.0.3",
-		"cryptiles": ">=4.1.2",
-		"sshpk": ">=1.13.2"
+		"minimatch": "^3.0.4"
 	}
 }
