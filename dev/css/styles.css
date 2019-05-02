@@ -636,6 +636,12 @@ ul li {
   font-weight: 700;
   text-transform: uppercase; }
 
+.byline {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 0 1.5rem 0;
+  text-align: center; }
+
 hr {
   border: none;
   border-top: medium double #444;
