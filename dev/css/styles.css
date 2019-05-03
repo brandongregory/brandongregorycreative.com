@@ -623,6 +623,30 @@ h3 {
 ul li {
   list-style-type: circle; }
 
+dd {
+  margin-bottom: 1rem; }
+
+blockquote {
+  border-left: 4px solid #999;
+  padding: 1.5rem 0 .5rem 2rem;
+  position: relative; }
+  blockquote::before {
+    background: #999;
+    border-radius: 50%;
+    color: #FFF;
+    content: open-quote;
+    display: inline-block;
+    font-size: 4rem;
+    height: 3rem;
+    left: calc(-1.5rem - 2px);
+    line-height: 3rem;
+    overflow: hidden;
+    padding-top: 1.4rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 3rem; }
+
 .text-center {
   text-align: center; }
 
