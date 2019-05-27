@@ -587,24 +587,21 @@ nav {
     nav .logo {
       float: right; }
   .navbar-toggle {
-    transform: translateX(6px);
     transition: all .5s ease; }
     .navbar-toggle .menu-bar {
       transition: all .5s ease; }
-    .navbar-toggle .menu-bar:nth-of-type(2) {
+    .navbar-toggle .menu-bar:nth-of-type(1) {
       transform: rotate(45deg) translateY(11px); }
-    .navbar-toggle .menu-bar:nth-of-type(3) {
+    .navbar-toggle .menu-bar:nth-of-type(2) {
       opacity: 0; }
-    .navbar-toggle .menu-bar:nth-of-type(4) {
+    .navbar-toggle .menu-bar:nth-of-type(3) {
       transform: rotate(-45deg) translateY(-11px); }
-    .navbar-toggle.collapsed {
-      transform: translateX(0); }
-      .navbar-toggle.collapsed .menu-bar:nth-of-type(2) {
-        transform: rotate(0) translateY(0); }
-      .navbar-toggle.collapsed .menu-bar:nth-of-type(3) {
-        opacity: 1; }
-      .navbar-toggle.collapsed .menu-bar:nth-of-type(4) {
-        transform: rotate(0) translateY(0); } }
+    .navbar-toggle.collapsed .menu-bar:nth-of-type(1) {
+      transform: rotate(0) translateY(0); }
+    .navbar-toggle.collapsed .menu-bar:nth-of-type(2) {
+      opacity: 1; }
+    .navbar-toggle.collapsed .menu-bar:nth-of-type(3) {
+      transform: rotate(0) translateY(0); } }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
@@ -654,7 +651,9 @@ blockquote {
   font-size: 14px; }
 
 .sr-only {
-  display: none; }
+  left: 100000px;
+  position: absolute;
+  top: 0; }
 
 .caps {
   font-weight: 700;

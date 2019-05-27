@@ -50,7 +50,9 @@ blockquote {
     font-size: 14px;
 }
 .sr-only {
-    display: none;
+    left: 100000px;
+    position: absolute;
+    top: 0;
 }
 .caps {
     font-weight: 700;

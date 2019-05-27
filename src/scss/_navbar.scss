@@ -110,29 +110,27 @@ nav {
         }
     }
     .navbar-toggle {
-        transform: translateX(6px);
         transition: all .5s ease;
         .menu-bar {
             transition: all .5s ease;
         }
-        .menu-bar:nth-of-type(2) {
+        .menu-bar:nth-of-type(1) {
             transform: rotate(45deg) translateY(11px);
         }
-        .menu-bar:nth-of-type(3) {
+        .menu-bar:nth-of-type(2) {
             opacity: 0;
         }
-        .menu-bar:nth-of-type(4) {
+        .menu-bar:nth-of-type(3) {
             transform: rotate(-45deg) translateY(-11px);
         }
         &.collapsed {
-            transform: translateX(0);
-            .menu-bar:nth-of-type(2) {
+            .menu-bar:nth-of-type(1) {
                 transform: rotate(0) translateY(0);
             }
-            .menu-bar:nth-of-type(3) {
+            .menu-bar:nth-of-type(2) {
                 opacity: 1;
             }
-            .menu-bar:nth-of-type(4) {
+            .menu-bar:nth-of-type(3) {
                 transform: rotate(0) translateY(0);
             }
         }
