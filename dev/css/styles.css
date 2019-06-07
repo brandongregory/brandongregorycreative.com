@@ -329,6 +329,52 @@ section.short {
 .bgs-btn-youtube:hover {
   background-color: #cd201f; }
 
+.dm-toggle:before {
+  display: none; }
+
+.light-mode-toggle, .dark-mode-toggle {
+  font-size: 12px;
+  line-height: 53px;
+  text-align: center; }
+  .light-mode-toggle:focus, .light-mode-toggle:hover, .dark-mode-toggle:focus, .dark-mode-toggle:hover {
+    color: inherit; }
+
+.light-mode-toggle {
+  display: none; }
+
+body.dark-mode {
+  background: #333A44;
+  color: #FFF5E5; }
+  body.dark-mode .light-mode-toggle {
+    display: inline-block; }
+  body.dark-mode .dark-mode-toggle {
+    display: none; }
+  body.dark-mode h1 {
+    color: #FFF5E5; }
+  body.dark-mode nav {
+    background-color: rgba(34, 36, 42, 0.9);
+    border-bottom: none; }
+    body.dark-mode nav ul.nav {
+      background-color: rgba(34, 36, 42, 0.9); }
+      body.dark-mode nav ul.nav li a::before {
+        border-color: #FFF5E5; }
+      body.dark-mode nav ul.nav li a.active::before {
+        background-color: #FFF5E5; }
+    body.dark-mode nav .navbar-toggle .menu-bar {
+      background: #FFF5E5; }
+  body.dark-mode a {
+    color: #B08A66; }
+  body.dark-mode hr {
+    border-top-color: #FFF5E5; }
+    body.dark-mode hr::after {
+      background: #333A44;
+      color: #FFF5E5; }
+  body.dark-mode blockquote {
+    border-left-color: rgba(34, 36, 42, 0.9); }
+    body.dark-mode blockquote::before {
+      background: rgba(34, 36, 42, 0.9);
+      color: #FFF5E5; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?zg1sw");
@@ -479,6 +525,9 @@ form button {
   form .error {
     margin: 0 0 0.5rem calc(25% + 1rem); } }
 
+body {
+  overflow-x: hidden; }
+
 main {
   margin: 0 auto;
   max-width: 800px;
@@ -565,7 +614,7 @@ nav {
           width: 100%; }
       nav ul.nav.open {
         border-top: 1px solid #CCC;
-        max-height: 300px; }
+        max-height: 325px; }
     nav .navbar-toggle {
       background: transparent;
       border: none;
