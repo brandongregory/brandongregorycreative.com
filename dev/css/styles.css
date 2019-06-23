@@ -329,8 +329,54 @@ section.short {
 .bgs-btn-youtube:hover {
   background-color: #cd201f; }
 
-.dm-toggle:before {
-  display: none; }
+.dm-toggle::before {
+  display: none !important; }
+
+.light-mode-toggle {
+  background: #FFF5E5;
+  display: inline-block;
+  height: 1rem;
+  position: relative;
+  width: 1rem; }
+  .light-mode-toggle::before {
+    background: #FFF5E5;
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    left: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 1rem; }
+  .light-mode-toggle::after {
+    background: #FFF5E5;
+    border: 1px solid #333A44;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: calc(1rem - 2px);
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    transform: rotate(45deg);
+    width: calc(1rem - 2px); }
+
+.dark-mode-toggle {
+  background: #333;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1rem;
+  position: relative;
+  width: 1rem; }
+  .dark-mode-toggle::after {
+    background: #f0f0f0;
+    border-radius: 50%;
+    bottom: .2rem;
+    content: "";
+    display: block;
+    height: 1rem;
+    left: .25rem;
+    position: absolute;
+    width: 1rem; }
 
 .light-mode-toggle, .dark-mode-toggle {
   font-size: 12px;
@@ -354,12 +400,10 @@ body.dark-mode {
   body.dark-mode nav {
     background-color: rgba(34, 36, 42, 0.9);
     border-bottom: none; }
-    body.dark-mode nav ul.nav {
-      background-color: rgba(34, 36, 42, 0.9); }
-      body.dark-mode nav ul.nav li a::before {
-        border-color: #FFF5E5; }
-      body.dark-mode nav ul.nav li a.active::before {
-        background-color: #FFF5E5; }
+    body.dark-mode nav ul.nav li a::before {
+      border-color: #FFF5E5; }
+    body.dark-mode nav ul.nav li a.active::before {
+      background-color: #FFF5E5; }
     body.dark-mode nav .navbar-toggle .menu-bar {
       background: #FFF5E5; }
   body.dark-mode a {
@@ -374,6 +418,10 @@ body.dark-mode {
     body.dark-mode blockquote::before {
       background: rgba(34, 36, 42, 0.9);
       color: #FFF5E5; }
+
+@media (max-width: 767px) {
+  body.dark-mode nav ul.nav {
+    background-color: rgba(34, 36, 42, 0.9); } }
 
 @font-face {
   font-family: 'icomoon';

@@ -1,8 +1,59 @@
 .dm-toggle {
-    &:before {
-        display: none;
+    &::before {
+        display: none !important;
     }
 }
+
+.light-mode-toggle {
+    background: $dm-text;
+    display: inline-block;
+    height: 1rem;
+    position: relative;
+    width: 1rem;
+    &::before {
+        background: $dm-text;
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        left: 0;
+        position: absolute;
+        transform: rotate(45deg);
+        width: 1rem;
+    }
+    &::after {
+        background: $dm-text;
+        border: 1px solid $dm-bg;
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        height: calc(1rem - 2px);
+        left: 1px;
+        position: absolute;
+        top: 1px;
+        transform: rotate(45deg);
+        width: calc(1rem - 2px);
+    }
+}
+.dark-mode-toggle {
+    background: #333;
+    border-radius: 50%;
+    display: inline-block;
+    height: 1rem;
+    position: relative;
+    width: 1rem;
+    &::after {
+        background: #f0f0f0;
+        border-radius: 50%;
+        bottom: .2rem;
+        content: "";
+        display: block;
+        height: 1rem;
+        left: .25rem;
+        position: absolute;
+        width: 1rem;        
+    }
+}
+
 .light-mode-toggle, .dark-mode-toggle {
     font-size: 12px;
     line-height: 53px;
@@ -33,7 +84,6 @@ body.dark-mode {
         background-color: $dm-nav;
         border-bottom: none;
         ul.nav {
-            background-color: $dm-nav;
             li a {
                 &::before {
                     border-color: $dm-text;
@@ -65,5 +115,11 @@ body.dark-mode {
             background: $dm-nav;
             color: $dm-text;
         }
+    }
+}
+
+@media (max-width: 767px) {
+    body.dark-mode nav ul.nav {
+        background-color: $dm-nav;
     }
 }
