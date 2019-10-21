@@ -44,6 +44,6 @@ gulp.task('moveIcons', function() {
         .pipe(gulp.dest('dist/icons/'))
 });
 
-gulp.task('package', ['minifyHtml', 'minifyCss', 'minifyJs', 'moveBlog', 'moveFonts', 'moveIcons']);
+gulp.task('package', gulp.series('minifyHtml', 'minifyCss', 'minifyJs', 'moveBlog', 'moveFonts', 'moveIcons'));
 
-gulp.task('default', ['sass']);
+gulp.task('default', gulp.series('sass'));
