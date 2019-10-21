@@ -1,41 +1,4 @@
-<!--
-    Looking for code you can read? Try my Github: https://github.com/brandongregory/brandongregorycreative.com
--->
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Brandon Gregory | The Biggest Blunders I've Seen in Tech Interviews</title>
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
-<link rel="stylesheet" href="../../css/styles.css">
-<link rel="icon" type="image/png" sizes="32x32" href="../../icons/bgc-32x32.png">
-</head>
-<body class="dark-mode ">
-  <nav>
-    <button type="button" class="navbar-toggle collapsed" aria-label="Open/Close Menu" aria-expanded="false">
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
-    </button>
-    <a class="logo" href="../../index.html">Brandon Gregory <span class="hidden-xs hidden-sm">Creative</span></a>
-    <ul class="nav">
-      <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../writing.html">Writing</a></li>
-      <li><a href="../../dev.html">Dev</a></li>
-      <li><a href="../../design.html">Design</a></li>
-      <li><a href="../../blog/" class="active">Blog</a></li>
-      <li><a href="#" class="dm-toggle"><span class="light-mode-toggle" title="Light Mode"></span><span class="dark-mode-toggle" title="Dark Mode"></span></a></li>
-    </ul>
-  </nav>
-  <main>
-
-
-        <article>
-            <h1>The Biggest Blunders I've Seen in Tech Interviews</h1>
-            <p class="byline">Posted 20 Jan 2017 in industry</p>
-            <p>I’ve been interviewing developers for seven years. I’ve seen some great candidates, and I’ve seen some horrible ones. Here are some of the worst mistakes I’ve seen — hopefully you can avoid them.</p>
+I"t2<p>I’ve been interviewing developers for seven years. I’ve seen some great candidates, and I’ve seen some horrible ones. Here are some of the worst mistakes I’ve seen — hopefully you can avoid them.</p>
 
 <!--more-->
 
@@ -130,42 +93,4 @@
 <p>Now, I’ve heard horror stories of people who lost their jobs because they were holding a drink in one Facebook photo. We’re not that uptight. I fully realize that people have a right to speak freely on the Internet in a non-professional setting, and I probably won’t approve of everything they do (just like they probably wouldn’t approve of everything I do online). But if the severity or the frequency of the faux-pas posts gives me concern for how they’ll handle themselves in the workplace or how they’ll portray our company to the public, yes, I will take notice, and it could impact your chance of getting the job.</p>
 
 <p>Just blocking everyone on all social media channels isn’t necessarily the best plan of action either. Yes, it hides all your embarrassing posts, but it also does nothing to help you. A good social media presence with thoughtful and relevant posts can greatly increase our interest in you as a candidate. And remember that just because your social media profiles are private does not necessarily mean that employers will never see them. The best course of action is to avoid putting damning information about yourself online, no matter the channel.</p>
-
-        </article>
-        
-            <div class="container" id="disqus_thread"></div>
-            <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-            /*var disqus_config = function () {
-                this.page.url = "www.brandongregorycreative.com";  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = "The Biggest Blunders I've Seen in Tech Interviews"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };*/
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://brandongregorycreative-com.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        
-    </section>
-    
-  </main>
-  <footer>
-    <p>
-      <a href="https://twitter.com/authorbrandong" class="bgs-btn bgs-btn-twitter"><i class="bg-twitter"></i><span class="sr-only">Brandon's Twitter</span></a>
-      <a href="https://github.com/brandongregory" class="bgs-btn bgs-btn-github"><i class="bg-github"></i><span class="sr-only">Brandon's Github</span></a>
-      <a href="https://codepen.io/pulpexploder/" class="bgs-btn bgs-btn-codepen"><i class="bg-codepen"></i><span class="sr-only">Brandon's Codepen</span></a>
-      <a href="https://www.linkedin.com/in/brandon-gregory-5971b8119" class="bgs-btn bgs-btn-linkedin"><i class="bg-linkedin"></i><span class="sr-only">Brandon's LinkedIn</span></a>
-      <a href="mailto:brandon.gregory.1981@gmail.com" class="bgs-btn bgs-btn-email"><i class="bg-envelope"></i><span class="sr-only">Email Brandon</span></a>
-    </p>
-    <p>
-        &copy;2016-2019 Brandon Gregory <span class="hidden-xs">&bull;&#32;</span><br class="visible-xs"> Made with <i class="bg-heart"></i><span class="sr-only">love</span> using <a href="https://jekyllrb.com/">Jekyll</a>.
-    </p>
-  </footer>
-  <script defer src="../../js/scripts.js"></script>
-</body>
-</html>
+:ET
